@@ -1,6 +1,6 @@
 # ☕ Java Playground
 
-> **Engineering Portfolio:** A collection of mini-projects, algorithmic solutions, and language experiments.
+> A collection of mini-projects, algorithmic solutions, and language experiments.
 
 Este repositório documenta minha evolução técnica com Java. Ele está dividido entre aplicações práticas (**mini-projects**), desafios algorítmicos (**challenges**) e minha rotina de estudos e exploração da sintaxe (**lab**).
 
@@ -77,3 +77,4 @@ Esta seção contém **códigos exploratórios**, anotações de aula e testes d
    javac Main.java
    java Main
    ```
+
