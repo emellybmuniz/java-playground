@@ -1,0 +1,30 @@
+name: Sync Java lab to playground-lab
+
+on:
+  push:
+    paths:
+      - 'lab/**' 
+    branches:
+      - master 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código fonte
+        uses: actions/checkout@v3
+
+      - name: Push para o repositório playground-lab
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'lab'     
+          destination-github-username: 'emellybmuniz'
+          destination-repository-name: 'playground-lab'
+          target-branch: 'master'  
+          target-directory: 'java'
+          user-email: emellybmuniz@gmail.com
+          user-name: emellybmuniz
+          commit-message: "feat(java): sync lab updates from java-playground ORIGIN_COMMIT"
+
