@@ -23,7 +23,7 @@ jobs:
           source-directory: 'lab'
           destination-github-username: 'emellybmuniz'
           destination-repository-name: 'playground-lab'
-          target-branch: 'master'
+          target-branch: 'main'
           target-directory: 'java'
           user-email: emellybmuniz@gmail.com
           user-name: emellybmuniz
