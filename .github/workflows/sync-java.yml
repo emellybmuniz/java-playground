@@ -3,7 +3,7 @@ name: Sync Java lab to playground-lab
 on:
   push:
     paths:
-      - 'lab/**' 
+      - 'lab/**'
     branches:
       - main
   workflow_dispatch:
@@ -20,12 +20,11 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'lab'     
+          source-directory: 'lab'
           destination-github-username: 'emellybmuniz'
           destination-repository-name: 'playground-lab'
-          target-branch: 'master'  
+          target-branch: 'master'
           target-directory: 'java'
           user-email: emellybmuniz@gmail.com
           user-name: emellybmuniz
-          commit-message: "feat(java): sync lab updates from java-playground ORIGIN_COMMIT"
-
+          commit-message: "feat(java): sync lab updates from java-playground"
